@@ -41,6 +41,7 @@ export function preventDragover (event: DragEvent) {
 
 export function handleSubmit (event: Event) {
   if (this.formSubmitted) return
+  if (!event.target.classList.contains('js-contains-dropzone')) return
 
   this.formSubmitted = true
   const formController = findOrInitializeFormController(event.target)
