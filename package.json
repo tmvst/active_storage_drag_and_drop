@@ -1,6 +1,6 @@
 {
   "name": "active_storage_drag_and_drop",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Attach cloud and local files in Rails applications",
   "main": "app/assets/javascripts/active_storage_drag_and_drop.js",
   "files": [
@@ -44,7 +44,7 @@
     "webpack-cli": ">=3.3.1"
   },
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --mode production",
     "dev": "webpack -d --watch",
     "test": "mocha -r babel-register -r jsdom-global/register ./test/mocha/**/*.js",
     "cover": "nyc -r lcov -r text -r html mocha -r babel-register -r jsdom-global/register test/mocha/**/*.js"
